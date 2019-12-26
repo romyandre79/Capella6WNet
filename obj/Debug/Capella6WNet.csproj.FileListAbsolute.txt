@@ -1,0 +1,16 @@
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Capella6WNet.exe.config
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Capella6WNet.exe
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Capella6WNet.pdb
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.csprojAssemblyReference.cache
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.BaseForm.resources
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.Properties.Resources.resources
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.csproj.GenerateResource.cache
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.exe
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.pdb
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Capella6LNet.dll
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Newtonsoft.Json.dll
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Capella6LNet.pdb
+C:\WinNMP\WWW\Capella6WNet\bin\Debug\Newtonsoft.Json.xml
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.csproj.CopyComplete
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.LoginForm.resources
+C:\WinNMP\WWW\Capella6WNet\obj\Debug\Capella6WNet.MainForm.resources

@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
+      this.components = new System.ComponentModel.Container();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
       this.LabelText = new System.Windows.Forms.Label();
       this.LabelUserName = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
       this.LabelPassword = new System.Windows.Forms.Label();
       this.ButtonLogin = new System.Windows.Forms.Button();
       this.ButtonClose = new System.Windows.Forms.Button();
+      this.ToolTipLogin = new System.Windows.Forms.ToolTip(this.components);
       this.SuspendLayout();
       // 
       // LabelText
@@ -98,22 +100,22 @@
       // ButtonLogin
       // 
       this.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.ButtonLogin.Location = new System.Drawing.Point(617, 349);
+      this.ButtonLogin.Location = new System.Drawing.Point(654, 349);
       this.ButtonLogin.Name = "ButtonLogin";
-      this.ButtonLogin.Size = new System.Drawing.Size(107, 51);
+      this.ButtonLogin.Size = new System.Drawing.Size(98, 51);
       this.ButtonLogin.TabIndex = 6;
-      this.ButtonLogin.Text = "&Login";
+      this.ToolTipLogin.SetToolTip(this.ButtonLogin, "Click this to Login");
       this.ButtonLogin.UseVisualStyleBackColor = true;
       this.ButtonLogin.Click += new System.EventHandler(this.ButtonLoginClick);
       // 
       // ButtonClose
       // 
       this.ButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.ButtonClose.Location = new System.Drawing.Point(746, 349);
+      this.ButtonClose.Location = new System.Drawing.Point(758, 349);
       this.ButtonClose.Name = "ButtonClose";
-      this.ButtonClose.Size = new System.Drawing.Size(107, 51);
+      this.ButtonClose.Size = new System.Drawing.Size(98, 51);
       this.ButtonClose.TabIndex = 7;
-      this.ButtonClose.Text = "&Close";
+      this.ToolTipLogin.SetToolTip(this.ButtonClose, "Click this to Close Application");
       this.ButtonClose.UseVisualStyleBackColor = true;
       this.ButtonClose.Click += new System.EventHandler(this.ButtonCloseClick);
       // 
@@ -151,5 +153,6 @@
         private System.Windows.Forms.Label LabelPassword;
         private System.Windows.Forms.Button ButtonLogin;
         private System.Windows.Forms.Button ButtonClose;
+        private System.Windows.Forms.ToolTip ToolTipLogin;
     }
 }

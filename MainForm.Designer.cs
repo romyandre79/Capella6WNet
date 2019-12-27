@@ -36,7 +36,7 @@
       this.MainFormTabControl = new System.Windows.Forms.TabControl();
       this.TabPageHome = new System.Windows.Forms.TabPage();
       this.ButtonSubmit = new System.Windows.Forms.Button();
-      this.comboBox1 = new System.Windows.Forms.ComboBox();
+      this.EditTheme = new System.Windows.Forms.ComboBox();
       this.LabelTheme = new System.Windows.Forms.Label();
       this.EditLanguage = new System.Windows.Forms.ComboBox();
       this.LabelLanguage = new System.Windows.Forms.Label();
@@ -50,8 +50,7 @@
       this.LabelPassword = new System.Windows.Forms.Label();
       this.EditUserName = new System.Windows.Forms.TextBox();
       this.LabelUserName = new System.Windows.Forms.Label();
-      this.ImageListButton = new System.Windows.Forms.ImageList(this.components);
-      this.ImageListMenu = new System.Windows.Forms.ImageList(this.components);
+      this.ToolTipClose = new System.Windows.Forms.ToolTip(this.components);
       this.panel1.SuspendLayout();
       this.MainFormTabControl.SuspendLayout();
       this.TabPageHome.SuspendLayout();
@@ -75,17 +74,18 @@
       this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
       this.panel1.Location = new System.Drawing.Point(0, 52);
       this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(996, 58);
+      this.panel1.Size = new System.Drawing.Size(996, 60);
       this.panel1.TabIndex = 2;
       // 
       // ButtonClose
       // 
+      this.ButtonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
       this.ButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.ButtonClose.Location = new System.Drawing.Point(12, 3);
       this.ButtonClose.Name = "ButtonClose";
-      this.ButtonClose.Size = new System.Drawing.Size(105, 49);
+      this.ButtonClose.Size = new System.Drawing.Size(51, 51);
       this.ButtonClose.TabIndex = 7;
-      this.ButtonClose.Text = "&Close";
+      this.ToolTipClose.SetToolTip(this.ButtonClose, "Click this to Close Form");
       this.ButtonClose.UseVisualStyleBackColor = true;
       this.ButtonClose.Click += new System.EventHandler(this.ButtonCloseClick);
       // 
@@ -93,9 +93,9 @@
       // 
       this.MainFormTreeView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.MainFormTreeView.Dock = System.Windows.Forms.DockStyle.Left;
-      this.MainFormTreeView.Location = new System.Drawing.Point(0, 110);
+      this.MainFormTreeView.Location = new System.Drawing.Point(0, 112);
       this.MainFormTreeView.Name = "MainFormTreeView";
-      this.MainFormTreeView.Size = new System.Drawing.Size(278, 436);
+      this.MainFormTreeView.Size = new System.Drawing.Size(278, 434);
       this.MainFormTreeView.TabIndex = 3;
       // 
       // MainFormTabControl
@@ -103,18 +103,18 @@
       this.MainFormTabControl.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
       this.MainFormTabControl.Controls.Add(this.TabPageHome);
       this.MainFormTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.MainFormTabControl.Location = new System.Drawing.Point(278, 110);
+      this.MainFormTabControl.Location = new System.Drawing.Point(278, 112);
       this.MainFormTabControl.Multiline = true;
       this.MainFormTabControl.Name = "MainFormTabControl";
       this.MainFormTabControl.SelectedIndex = 0;
-      this.MainFormTabControl.Size = new System.Drawing.Size(718, 436);
+      this.MainFormTabControl.Size = new System.Drawing.Size(718, 434);
       this.MainFormTabControl.TabIndex = 4;
       // 
       // TabPageHome
       // 
       this.TabPageHome.BackColor = System.Drawing.Color.White;
       this.TabPageHome.Controls.Add(this.ButtonSubmit);
-      this.TabPageHome.Controls.Add(this.comboBox1);
+      this.TabPageHome.Controls.Add(this.EditTheme);
       this.TabPageHome.Controls.Add(this.LabelTheme);
       this.TabPageHome.Controls.Add(this.EditLanguage);
       this.TabPageHome.Controls.Add(this.LabelLanguage);
@@ -131,30 +131,31 @@
       this.TabPageHome.Location = new System.Drawing.Point(4, 25);
       this.TabPageHome.Name = "TabPageHome";
       this.TabPageHome.Padding = new System.Windows.Forms.Padding(3);
-      this.TabPageHome.Size = new System.Drawing.Size(710, 407);
+      this.TabPageHome.Size = new System.Drawing.Size(710, 405);
       this.TabPageHome.TabIndex = 0;
       this.TabPageHome.Text = "Home";
       // 
       // ButtonSubmit
       // 
       this.ButtonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.ButtonSubmit.Location = new System.Drawing.Point(271, 279);
+      this.ButtonSubmit.Location = new System.Drawing.Point(319, 281);
       this.ButtonSubmit.Name = "ButtonSubmit";
-      this.ButtonSubmit.Size = new System.Drawing.Size(105, 49);
+      this.ButtonSubmit.Size = new System.Drawing.Size(57, 44);
       this.ButtonSubmit.TabIndex = 17;
-      this.ButtonSubmit.Text = "&Submit";
+      this.ToolTipClose.SetToolTip(this.ButtonSubmit, "Click this to Save Profile");
       this.ButtonSubmit.UseVisualStyleBackColor = true;
+      this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
       // 
-      // comboBox1
+      // EditTheme
       // 
-      this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-      this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.comboBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.comboBox1.FormattingEnabled = true;
-      this.comboBox1.Location = new System.Drawing.Point(140, 231);
-      this.comboBox1.Name = "comboBox1";
-      this.comboBox1.Size = new System.Drawing.Size(236, 27);
-      this.comboBox1.TabIndex = 16;
+      this.EditTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+      this.EditTheme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.EditTheme.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.EditTheme.FormattingEnabled = true;
+      this.EditTheme.Location = new System.Drawing.Point(140, 231);
+      this.EditTheme.Name = "EditTheme";
+      this.EditTheme.Size = new System.Drawing.Size(236, 27);
+      this.EditTheme.TabIndex = 16;
       // 
       // LabelTheme
       // 
@@ -192,7 +193,6 @@
       this.EditPhoneNo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.EditPhoneNo.Location = new System.Drawing.Point(140, 157);
       this.EditPhoneNo.Name = "EditPhoneNo";
-      this.EditPhoneNo.PasswordChar = 'X';
       this.EditPhoneNo.Size = new System.Drawing.Size(236, 27);
       this.EditPhoneNo.TabIndex = 12;
       // 
@@ -212,7 +212,6 @@
       this.EditEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.EditEmail.Location = new System.Drawing.Point(140, 124);
       this.EditEmail.Name = "EditEmail";
-      this.EditEmail.PasswordChar = 'X';
       this.EditEmail.Size = new System.Drawing.Size(236, 27);
       this.EditEmail.TabIndex = 10;
       // 
@@ -232,7 +231,6 @@
       this.EditRealName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.EditRealName.Location = new System.Drawing.Point(140, 91);
       this.EditRealName.Name = "EditRealName";
-      this.EditRealName.PasswordChar = 'X';
       this.EditRealName.Size = new System.Drawing.Size(236, 27);
       this.EditRealName.TabIndex = 8;
       // 
@@ -286,17 +284,9 @@
       this.LabelUserName.TabIndex = 0;
       this.LabelUserName.Text = "label1";
       // 
-      // ImageListButton
+      // ToolTipClose
       // 
-      this.ImageListButton.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-      this.ImageListButton.ImageSize = new System.Drawing.Size(16, 16);
-      this.ImageListButton.TransparentColor = System.Drawing.Color.Transparent;
-      // 
-      // ImageListMenu
-      // 
-      this.ImageListMenu.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-      this.ImageListMenu.ImageSize = new System.Drawing.Size(16, 16);
-      this.ImageListMenu.TransparentColor = System.Drawing.Color.Transparent;
+      this.ToolTipClose.IsBalloon = true;
       // 
       // MainForm
       // 
@@ -308,6 +298,7 @@
       this.Controls.Add(this.panel1);
       this.Controls.Add(this.LabelText);
       this.Name = "MainForm";
+      this.ShowInTaskbar = true;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
       this.Load += new System.EventHandler(this.MainFormLoad);
@@ -338,11 +329,10 @@
         private System.Windows.Forms.TextBox EditRealName;
         private System.Windows.Forms.Label LabelRealName;
         private System.Windows.Forms.Button ButtonSubmit;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox EditTheme;
         private System.Windows.Forms.Label LabelTheme;
         private System.Windows.Forms.ComboBox EditLanguage;
         private System.Windows.Forms.Label LabelLanguage;
-        private System.Windows.Forms.ImageList ImageListButton;
-        private System.Windows.Forms.ImageList ImageListMenu;
+        private System.Windows.Forms.ToolTip ToolTipClose;
     }
 }

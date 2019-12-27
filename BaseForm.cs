@@ -16,6 +16,8 @@ namespace Capella6WNet
   {
     public Host MyHost = new Host();
     public User MyUser = new User();
+    public List<MenuAccess> MyMenu = new List<MenuAccess>();
+    public List<MenuAccess> MyMenuFav = new List<MenuAccess>();
     public StringBuilder RequestData = new StringBuilder();
     public StringBuilder ResponseData = new StringBuilder();
 

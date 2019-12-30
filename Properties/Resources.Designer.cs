@@ -59,5 +59,15 @@ namespace Capella6WNet.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Andromeda_Galaxy {
+            get {
+                object obj = ResourceManager.GetObject("Andromeda-Galaxy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
